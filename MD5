@@ -1,4 +1,4 @@
-58d04c7440813b189129a749c3ff9ae1 *DESCRIPTION
+ea8d2860018211775db074d66168db4e *DESCRIPTION
 c304594e595d55a603202ec619fd82ac *NAMESPACE
 bafa3e2919d0b7be6b8620e1031f71c1 *R/binary.R
 3471b266fa4b87383b4ff8b9d1cecb77 *R/c_wrap.R
@@ -7,10 +7,10 @@ bafa3e2919d0b7be6b8620e1031f71c1 *R/binary.R
 c727ed24fbe204b47fd4103bcbc3310c *R/getOffsets.r
 5d419b840a0702e7fb94c012e86dab00 *R/matchDatasets.r
 4501170eb2ce3317776d6fd8bf147dbd *R/simulate.r
-5f4e01d7a5034ae6ace01050eec2f59d *build/vignette.rds
+7d2deef11aa00d798acd32c96ee1d451 *build/vignette.rds
 35a47caca522e34d60889f6cb1c9dc39 *inst/doc/intro.R
 abc78ed28a047697292d4cd2aed993d6 *inst/doc/intro.Rmd
-2e7bcfaa9015b4af866aba3691b236c5 *inst/doc/intro.html
+acda24d16a3d4aa8d97f56de384a136f *inst/doc/intro.html
 de831671523a232eac654e0265aded63 *man/cramerV.Rd
 b2c2db3b6e1be32309aba1994e664aff *man/enrichmentAnalysis.Rd
 f72c104ba392f8cc5fea3d9cca51b3be *man/getOffsets.Rd
@@ -20,5 +20,5 @@ a471e3dde0cc699f6c42a71e47bff4c4 *man/matchDatasets.Rd
 c7be9ae75d3ceb6e509f6471e77c705c *man/shiftrPrepare.Rd
 29cf42ea2498ba3d2d39ea8820ebe303 *man/simulate.Rd
 a18bff10279811030383c5ed9f84b3fd *man/singlePermutation.Rd
-fb07d4c456b14464f759f186933a10d6 *src/c_code.c
+89c8c86867e9973f5b6af7e5ad209fb9 *src/c_code.c
 abc78ed28a047697292d4cd2aed993d6 *vignettes/intro.Rmd
