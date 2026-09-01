@@ -53,7 +53,7 @@ SEXP CbitSumAnd(SEXP x, SEXP y){
     int n1 = length(x);
     y = PROTECT(coerceVector(y, INTSXP));
     int n2 = length(x);
-    int n = n1>n2 ? n2 : n1;
+    int n = (n1>n2) ? n2 : n1;
     int *px = INTEGER(x);
     int *py = INTEGER(y);
     
@@ -91,7 +91,7 @@ SEXP CbitSumAndShifted(SEXP x, SEXP y, SEXP yoffset){
     int n1 = length(x);
     y = PROTECT(coerceVector(y, INTSXP));
     int n2 = length(x);
-    int n = n1>n2 ? n2 : n1;
+    int n = (n1>n2) ? n2 : n1;
     int *px = INTEGER(x);
     int *py = INTEGER(y);
     yoffset = PROTECT(coerceVector(yoffset, INTSXP));
@@ -120,7 +120,7 @@ SEXP CbitSumAndYinX(SEXP x, SEXP y, SEXP xstart){
     xstart = PROTECT(coerceVector(xstart, INTSXP));
     int start = INTEGER(xstart)[0];
     
-    if(( start < 0 ) | ( n1 < start + n )){
+    if(( start < 0 ) || ( n1 < start + n )){
         UNPROTECT(3);
         return R_NilValue;
     }
@@ -140,11 +140,11 @@ SEXP CbitSumAndYinX(SEXP x, SEXP y, SEXP xstart){
 }
 
 static R_CallMethodDef callMethods[] = {
-    {"CbitSum",				(DL_FUNC) &CbitSum, 1},
-    {"CbitSumAnd",			(DL_FUNC) &CbitSumAnd, 2},
-    {"CbitSumOr",			(DL_FUNC) &CbitSumOr, 2},
-    {"CbitSumAndShifted",	(DL_FUNC) &CbitSumAndShifted, 3},
-    {"CbitSumAndYinX",		(DL_FUNC) &CbitSumAndYinX, 3},
+    {"CbitSum",           (DL_FUNC) &CbitSum, 1},
+    {"CbitSumAnd",        (DL_FUNC) &CbitSumAnd, 2},
+    {"CbitSumOr",         (DL_FUNC) &CbitSumOr, 2},
+    {"CbitSumAndShifted", (DL_FUNC) &CbitSumAndShifted, 3},
+    {"CbitSumAndYinX",    (DL_FUNC) &CbitSumAndYinX, 3},
     {NULL, NULL, 0}
 };
 

@@ -34,7 +34,7 @@ shiftrPrepareRight(set)
     Andrey A Shabalin \email{andrey.shabalin@gmail.com}
 }
 \seealso{
-    See code{\link{shiftrPermBinary}} function and the respective example.
+    See \code{\link{shiftrPermBinary}} function and the respective example.
 }
 \examples{
 ### Number of features

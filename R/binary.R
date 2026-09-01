@@ -37,8 +37,8 @@ shiftrPrepareRight = function(set){
 }
 
 singlePermutation = function(left, right, offset){
-    stopifnot( class(left) == "fcpLeft" );
-    stopifnot( class(right) == "fcpRight" );
+    stopifnot( inherits(left, "fcpLeft") );
+    stopifnot( inherits(right, "fcpRight") );
     stopifnot( attr(left, "len") == attr(right, "len") );
     stopifnot( offset >= 0L )
     stopifnot( offset < attr(right, "len") )
@@ -56,9 +56,9 @@ shiftrPermBinary = function(
     rez = list();
     stopifnot( typeof(offsets) %in% c("NULL","integer") );
     
-    if( class(left) != "fcpLeft" )
+    if( !inherits(left, "fcpLeft") )
         left = shiftrPrepareLeft(left);
-    if( class(right) != "fcpRight" )
+    if( !inherits(right, "fcpRight") )
         right = shiftrPrepareRight(right);
     
     stopifnot( attr(left, "len") == attr(right, "len") );
